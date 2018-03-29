@@ -1,0 +1,34 @@
+{
+  "name": "Altair",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "cordova": "^8.0.0",
+    "firebase": "^4.11.0",
+    "ionic": "^3.19.1",
+    "random-string": "^0.2.0",
+    "rc-swipeout": "^2.0.4",
+    "react": "16.2.0",
+    "react-native": "0.53.0",
+    "react-native-button": "^2.3.0",
+    "react-native-fbsdk": "^0.7.0",
+    "react-native-firebase": "^3.3.1",
+    "react-native-google-signin": "^0.12.0",
+    "react-native-modalbox": "^1.4.2",
+    "react-native-swipeout": "^2.3.3",
+    "react-native-vector-icons": "^4.5.0"
+  },
+  "devDependencies": {
+    "babel-jest": "22.2.2",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "22.2.2",
+    "react-test-renderer": "16.2.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

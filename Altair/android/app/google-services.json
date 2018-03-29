@@ -1,0 +1,50 @@
+{
+  "project_info": {
+    "project_number": "859119399264",
+    "firebase_url": "https://altair-rn.firebaseio.com",
+    "project_id": "altair-rn",
+    "storage_bucket": "altair-rn.appspot.com"
+  },
+  "web":{  
+    "client_id":"859119399264-rpjasmgdf0qmt78unoe70tvmni012tkq.apps.googleusercontent.com",
+    "project_id":"altair-rn",
+    "auth_uri":"https://accounts.google.com/o/oauth2/auth",
+    "token_uri":"https://accounts.google.com/o/oauth2/token",
+    "auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs",
+    "client_secret":"aDw00dzatfKJugpfR_pLPl_M"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859119399264:android:d844da56db16c3a7",
+        "android_client_info": {
+          "package_name": "com.altair"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "859119399264-s9fdaa6u30nl5tbo9em26ot7vea6efsb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeUAzAp8TpmznyKbm-kvNNRK-imvz60so"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

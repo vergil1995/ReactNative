@@ -1,0 +1,11 @@
+rootProject.name = 'Altair'
+include ':react-native-google-signin'
+project(':react-native-google-signin').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-google-signin/android')
+include ':react-native-fbsdk', ':samples:SwitchUserSample', ':samples:Scrumptious', ':facebook-login', ':facebook', ':samples:Iconicus', ':samples:PlacesGraphSample', ':samples:LoginSample', ':facebook-share', ':facebook-places', ':facebook-common', ':facebook-messenger', ':samples:ShareIt', ':samples:RPSSample', ':samples:FBLoginSample', ':facebook-core', ':samples:MessengerSendSample', ':samples:HelloFacebookSample', ':facebook-applinks'
+project(':react-native-fbsdk').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fbsdk/android')
+include ':react-native-fbsdk'
+project(':react-native-fbsdk').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fbsdk/android')
+include ':react-native-fbsdk'
+project(':react-native-fbsdk').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fbsdk/android')
+
+include ':app'

@@ -1,0 +1,48 @@
+﻿I. Cmd:
+1. Login Facebook
+Path keytool: C:\Program Files\Java\jre1.8.0_161\bin\keytool.exe
+Path openssl: C:\Users\Altair\Downloads\openssl-0.9.8k_X64\bin\openssl.exe
+cmd by admin
+Developt Key
+keytool -exportcert -alias androiddebugkey -keystore %HOMEPATH%\.android\debug.keystore | C:\Users\Altair\Downloads\openssl-0.9.8k_X64\bin\openssl.exe sha1 -binary | C:\Users\Altair\Downloads\openssl-0.9.8k_X64\bin\openssl.exe base64
+pass: android
+Key: IuB/5XngxC+8JZLCoM+m1/YKlFg=
+
+Release Key: zY00cczs2SG28RTn1bZQvsCftvI=
+keytool -exportcert -alias YOUR_RELEASE_KEY_ALIAS -keystore YOUR_RELEASE_KEY_PATH | C:\Users\Altair\Downloads\openssl-0.9.8k_X64\bin\openssl.exe sha1 -binary | C:\Users\Altair\Downloads\openssl-0.9.8k_X64\bin\openssl.exe base64
+
+keytool -exportcert -keystore %HOMEPATH%\.android\debug.keystore -list -v
+Alias name: androiddebugkey
+Creation date: Sep 4, 2017
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: C=US, O=Android, CN=Android Debug
+Issuer: C=US, O=Android, CN=Android Debug
+Serial number: 1
+Valid from: Mon Sep 04 22:28:29 ICT 2017 until: Wed Aug 28 22:28:29 ICT 2047
+Certificate fingerprints:
+         MD5:  03:FC:D4:F4:19:9A:EF:A5:7A:31:30:6C:B6:3A:6A:36
+         SHA1: 22:E0:7F:E5:79:E0:C4:2F:BC:25:92:C2:A0:CF:A6:D7:F6:0A:94:58
+         SHA256: 50:3F:31:BE:E5:65:3B:A0:EF:F1:D2:43:84:3E:B0:DA:AC:B6:A8:7A:4E:AD:A2:FA:C4:B2:18:3E:4D:46:D2:CE
+Signature algorithm name: SHA1withRSA
+Subject Public Key Algorithm: 1024-bit RSA key
+Version: 1
+
+II. Config
+
+Tạo chuỗi cho ID ứng dụng Facebook và các chuỗi cần để bật Tab tùy chỉnh của Chrome. Ngoài ra, hãy thêm FacebookActivity vào tệp kê khai Android của bạn.
+1. Mở tệp /app/res/values/strings.xml.
+2. Thêm phần sau:
+		<string name="facebook_app_id">2062148800736970</string>
+		
+3. Mở tệp /app/manifest/AndroidManifest.xml.
+4. Thêm thành phần uses-permission sau đây vào phía sau thành phần application:
+          
+		<uses-permission android:name="android.permission.INTERNET"/>
+
+5. Thêm thành phần meta-data sau, một hoạt động của Facebook, một hoạt động và bộ lọc dự định của Tab tùy chỉnh Chrome vào bên trong thành phần application:
+		<meta-data android:name="com.facebook.sdk.ApplicationId" 
+				android:value="@string/facebook_app_id"/>
+			
+			

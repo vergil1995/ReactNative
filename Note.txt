@@ -1,0 +1,58 @@
+How to debug
+- install :npm install -g react-devtools		-g la toan bo ko -g la chi project do thoi
+- http://localhost:8081/debugger-ui/
+- Remote Debug JS
+- View Crash adb logcat -b crash
+Button: react-native-button
+Delelte Item FlatList: $yarn add react-native-swipeout / npm install --save rc-swipeout - Android
+https://github.com/sunlight3d/react_native_v0.49
+
+// Tham Khao
+https://github.com/sunlight3d/react_native_v0.49
+https://github.com/sunlight3d/NodeJsTutorialES6
+
+//add modal
+npm install react-native-modalbox@latest --save
+npm install random-string
+
+// Vector Icon- fail
+npm install react-native-vector-icons --save
+rm ./node_modules/react-native/local-cli/core/__fixtures__/files/package.json
+npm install -g cordova ionic
+
+//////////////////////////////////////////////////// Node JS //////////////////////////////////////
+// Express
+npm install express-generator -g
+express --view=ejs myApp
+npm install
+npm start
+///////////////////// MongoDB
+npm install mongoose
+1. Thiet lap
+cd F:\MongoDB\bin\
+cmd1: .\mongod.exe --port 27017 --dbpath F:\NodeJS\Express\myApp\database
+cmd2 tao USer moi: .\mongo --port 27017
+use dataServerNode
+db.createUser({
+... user:"altair",
+... pwd:"123",
+... roles: ["readWrite", "dbAdmin", "dbOwner"]
+... })
+2. Start
+// Server
+cmd3: .\mongod.exe --auth --port 27017 --dbpath F:\NodeJS\Express\myApp\database
+// Client
+cmd 4 .\mongo --port 27017 -u "altair" -p "123" --authenticationDatabase "dataServerNode"
+use dataServerNode
+> show collections
+> db.servants.find().pretty()
+////////////////////// them image
+npm i -S formidable
+ObjectId("5a9411e2c0391230c4cd909f"),
+////////////////////// FireBase
+react-native install react-native-fbsdk
+npm install react-native-fbsdk
+Xem QuickStart https://developers.facebook.com/quickstarts/2062148800736970/?platform=android
+Google Signin: npm install react-native-google-signin --save
+		react-native link react-native-google-signin
+
